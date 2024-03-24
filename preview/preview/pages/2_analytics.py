@@ -2,6 +2,9 @@ import plotly.express as px
 import streamlit as st
 import streamlit.components.v1 as components
 from streamlit_elements import elements, mui, dashboard, nivo, html
+import pandas as pd
+import numpy as np
+np.random.seed(7)
 
 with open( "preview/Style.css" ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
@@ -31,18 +34,43 @@ unsafe_allow_html=True)
 c1, c2 = st.columns(2)
 
 with c1:
-    df = px.data.medals_long()
-    fig = px.bar(df, x='nation', y='count', color='medal', title='Medals by Country')
+    # df = px.data.medals_long()
+    df = pd.DataFrame(
+        data={
+            'source': ['People'] * 3 + ['FOX'] * 3 + ['CNN'] * 3,
+            'type': ['positive', 'neutral', 'negative'] * 3,
+            'count': [24, 10, 9, 13, 15, 12, 11, 8, 12]
+        }
+    )
+    # fig = px.bar(df, x='nation', y='count', color='medal', title='Medals by Country')
+    fig = px.bar(df, x='source', y='count', color='type', title='Sentiment by Source')
     st.plotly_chart(fig, use_container_width=True)
 
 with c2:
     df = px.data.tips()
-    fig = px.pie(df, values='tip', names='day', title='Tips per Day')
+    print(df)
+    df = pd.DataFrame(
+        data={
+            'share': [300, 360, 80, 250],
+            'source': ['Travis Kelce', 'Taylor Swift', 'Others', 'Kanye West'],
+        }
+    )
+    # fig = px.pie(df, values='tip', names='day', title='Tips per Day')
+    fig = px.pie(df, values='share', names='source', title='Share of Voice by Mentions')
     fig.update_traces(hoverinfo='label+percent', textinfo='value')
     st.plotly_chart(fig, use_container_width=True)
 
 df = px.data.gapminder().query("continent == 'Oceania'")
-fig = px.line(df, x='year', y='lifeExp', color='country')
+print(df)
+df = pd.DataFrame(
+    data={
+        'source': ['Twitter'] * 6 + ['Forums'] * 6 + ['News'] * 6 + ['Reddit'] * 6 + ['Comments'] * 6 + ['Other'] * 6,
+        'date': list(pd.date_range('1/1/2024', '3/1/2024', periods=6)) * 6,
+        'volume': list(np.random.randint(low=3000, high=7000, size = 6 * 5)) + list(np.random.randint(low=100, high=2000, size = 6)),
+    }
+)
+# fig = px.line(df, x='year', y='lifeExp', color='country')
+fig = px.line(df, x='date', y='volume', color='source', title='Mentions by Source')
 st.plotly_chart(fig, use_container_width=True)
 
 # with elements("dashboard"):
