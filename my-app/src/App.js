@@ -7,7 +7,6 @@ import Message from "./components/Message";
 import Input from "./components/Input";
 import History from "./components/History";
 import Clear from "./components/Clear";
-import Sidebar from "./components/Sidebar";
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -135,7 +134,7 @@ export default function App() {
                 onClick={input ? handleSubmit : undefined}
               />
             </div>
-            <div className="Column">
+            {/* <div className="Column">
               <h3 className="Title">History</h3>
               <div className="Content">
                 {history.map((el, i) => {
@@ -154,7 +153,7 @@ export default function App() {
                 })}
               </div>
               <Clear onClick={clear} />
-            </div>
+            </div> */}
           </div>
         </Content>
       </Layout>
