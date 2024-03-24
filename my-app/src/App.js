@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CohereClient } from "cohere-ai";
 
 import Message from "./components/Message";
 import Input from "./components/Input";
@@ -11,6 +12,9 @@ export default function App() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [history, setHistory] = useState([]);
+  const cohere = new CohereClient({
+    token: "4fO1Ufhr0lgREDz0XBKs4C8QKQbUEu0vvbsAhtt6",
+  });
 
   const handleSubmit = async () => {
     const prompt = {
@@ -20,22 +24,16 @@ export default function App() {
   
     // Update messages state optimistically
     setMessages([...messages, prompt]);
-  
-    try {
-      const response = await fetch("https://api.openai.com/v1/chat/completions", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          model: "gpt-3.5-turbo",
-          messages: [...messages, prompt],
-        }),
+
+    (async () => {
+      const prediction = await cohere.generate({
+          prompt: input,
+          maxTokens: 10,
       });
-  
-      const data = await response.json();
-      const res = data.choices[0].message.content;
+      
+      console.log("Received prediction", prediction);
+      const data = await prediction;
+      const res = data.generations[0].text;
   
       // Use the updated messages state after API response
       setMessages((prevMessages) => [
@@ -48,10 +46,39 @@ export default function App() {
   
       setHistory((prevHistory) => [...prevHistory, { question: input, answer: res }]);
       setInput("");
-    } catch (error) {
-      console.error("Error:", error);
-      // Handle error
-    }
+    })();
+  
+    // try {
+    //   // const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    //   //   method: "POST",
+    //   //   headers: {
+    //   //     Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
+    //   //     "Content-Type": "application/json",
+    //   //   },
+    //   //   body: JSON.stringify({
+    //   //     model: "gpt-3.5-turbo",
+    //   //     messages: [...messages, prompt],
+    //   //   }),
+    //   // });
+  
+    //   const data = await response.json();
+    //   const res = data.choices[0].message.content;
+  
+    //   // Use the updated messages state after API response
+    //   setMessages((prevMessages) => [
+    //     ...prevMessages,
+    //     {
+    //       role: "assistant",
+    //       content: res,
+    //     },
+    //   ]);
+  
+    //   setHistory((prevHistory) => [...prevHistory, { question: input, answer: res }]);
+    //   setInput("");
+    // } catch (error) {
+    //   console.error("Error:", error);
+    //   // Handle error
+    // }
   };  
 
   const clear = () => {
