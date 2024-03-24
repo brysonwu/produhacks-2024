@@ -382,6 +382,21 @@ trio = ["trio (>=0.23)"]
 wmi = ["wmi (>=1.5.1)"]
 
 [[package]]
+name = "eventregistry"
+version = "9.1"
+description = "A package that can be used to query information in Event Registry (http://eventregistry.org/)"
+optional = false
+python-versions = "*"
+files = [
+    {file = "eventregistry-9.1.tar.gz", hash = "sha256:6c9e37852e5e16a02f0ba4321ef36ea7c3fd2a7dbcad35d1e9a520915b3e63d5"},
+]
+
+[package.dependencies]
+pytz = "*"
+requests = "*"
+six = "*"
+
+[[package]]
 name = "executing"
 version = "2.0.1"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -1547,6 +1562,17 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
+name = "pytz"
+version = "2024.1"
+description = "World timezone definitions, modern and historical"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pytz-2024.1-py2.py3-none-any.whl", hash = "sha256:328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"},
+    {file = "pytz-2024.1.tar.gz", hash = "sha256:2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812"},
+]
+
+[[package]]
 name = "pywin32"
 version = "306"
 description = "Python for Window Extensions"
@@ -2353,4 +2379,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "7c662ff94d20c5fc0b7f3783fa5dcde396c59d2ea7e30d0c404cdeebe0f6e5b4"
+content-hash = "bec73c8441fd917421afaf90185743c439179d1eacbbe5bddf4ee23333fa5a73"

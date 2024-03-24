@@ -1,9 +1,16 @@
 from fastapi import APIRouter, HTTPException
 
-from backend.internal import scrape
+from backend.internal.scrape import scrape_articles
+from backend.internal import db
 
 router = APIRouter()
 
-@router.get('/{query}')
-async def execute(query: str, type: str):
-    pass
+@router.post('/{query}')
+async def execute(query: str):
+    articles = [
+        a.model_dump(by_alias=True, exclude=['id']) 
+        for a in scrape_articles(query)
+    ]
+    inserts = await db.articles.insert_many(articles)
+
+    return inserts.inserted_ids
