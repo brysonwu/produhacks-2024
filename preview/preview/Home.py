@@ -6,7 +6,7 @@ st.set_page_config(
     initial_sidebar_state="auto"
 )
 
-st.write('# Welcome to PReview!')
+st.title("Hi Tree Paine 👋")
 
 with open( "preview/Style.css" ) as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)

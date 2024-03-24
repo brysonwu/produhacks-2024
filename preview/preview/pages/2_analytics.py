@@ -3,9 +3,30 @@ import streamlit as st
 import streamlit.components.v1 as components
 from streamlit_elements import elements, mui, dashboard, nivo, html
 
-st.set_page_config(
-    layout='wide'
-)
+with open( "preview/Style.css" ) as css:
+    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+    
+st.markdown("""
+<style>
+	[data-testid="stDecoration"] {
+		background-image: linear-gradient(90deg, #2D388A, #00AEEF);
+	}
+    [data-testid="stHeader"] {
+		background-image: linear-gradient(90deg, #2D388A, #00AEEF);
+	}
+    [data-testid="stSidebar"] {
+        background-image: linear-gradient(#2D388A, #00AEEF) !important;
+        min-width: 10px !important;
+        width: 130px !important;
+    }
+</style>
+""",
+
+unsafe_allow_html=True)
+
+# st.set_page_config(
+#     layout='wide'
+# )
 
 c1, c2 = st.columns(2)
 

@@ -8,6 +8,27 @@ from preview.internal import secrets
 co = Client(secrets.COHERE_API_KEY)
 KEYWORD = "opinion"
 
+with open( "preview/Style.css" ) as css:
+    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+    
+st.markdown("""
+<style>
+	[data-testid="stDecoration"] {
+		background-image: linear-gradient(90deg, #2D388A, #00AEEF);
+	}
+    [data-testid="stHeader"] {
+		background-image: linear-gradient(90deg, #2D388A, #00AEEF);
+	}
+    [data-testid="stSidebar"] {
+        background-image: linear-gradient(#2D388A, #00AEEF) !important;
+        min-width: 10px !important;
+        width: 130px !important;
+    }
+</style>
+""",
+
+unsafe_allow_html=True)
+
 train_examples = [
     ClassifyExample(text="Taylor Swift's Era's Tour Receives Rave Reviews: Critics Applaud Spectacular Performances", label="Positive"),
     ClassifyExample(text="Taylor Swift's Era's Tour Takes Fans on an Unforgettable Journey Through Her Music", label="Positive"),
@@ -75,7 +96,7 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-if prompt := st.chat_input("What is up?"):
+if prompt := st.chat_input("Ask me anything"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
