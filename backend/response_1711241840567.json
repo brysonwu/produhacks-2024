@@ -1,0 +1,467 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - produhacks",
+        "totalResults": "415",
+        "searchTerms": "produhacks",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "d27210ac8e5fa463a"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - produhacks",
+        "totalResults": "415",
+        "searchTerms": "produhacks",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "d27210ac8e5fa463a"
+      }
+    ]
+  },
+  "context": {
+    "title": "PReview"
+  },
+  "searchInformation": {
+    "searchTime": 0.257543,
+    "formattedSearchTime": "0.26",
+    "totalResults": "415",
+    "formattedTotalResults": "415"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Produhacks-2023",
+      "htmlTitle": "<b>Produhacks</b>-2023",
+      "link": "https://www.ubcbiztech.com/produhacks-2023",
+      "displayLink": "www.ubcbiztech.com",
+      "snippet": "You will develop a product in a team of 4 people consisting of at least 1 product manager, 1 designer, and 1 developer. Workshops will be available where you ...",
+      "htmlSnippet": "You will develop a product in a team of 4 people consisting of at least 1 product manager, 1 designer, and 1 developer. Workshops will be available where you&nbsp;...",
+      "cacheId": "q0nlgrM4VQoJ",
+      "formattedUrl": "https://www.ubcbiztech.com/produhacks-2023",
+      "htmlFormattedUrl": "https://www.ubcbiztech.com/<b>produhacks</b>-2023",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYA_QGngK6BWueJ-NtcbxiYGhHD6BLEQEgKTDP20AUCNb1MfidMLLW13B8&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "twitter:title": "Produhacks-2023",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "Produhacks-2023"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://assets-global.website-files.com/5ab99dd5a721b51066f4a882/641f1651915522a1ef81ff3f_Group%20110.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ProduHacks 2022 - UBC BizTech & EY's Product Management ...",
+      "htmlTitle": "<b>ProduHacks</b> 2022 - UBC BizTech &amp; EY&#39;s Product Management ...",
+      "link": "https://produhacks-2022.devpost.com/",
+      "displayLink": "produhacks-2022.devpost.com",
+      "snippet": "ProduHacks is a product hackathon that is hosted in partnership with EY's Product division. UBC BizTech's product-focused competition aims to encourage students ...",
+      "htmlSnippet": "<b>ProduHacks</b> is a product hackathon that is hosted in partnership with EY&#39;s Product division. UBC BizTech&#39;s product-focused competition aims to encourage students&nbsp;...",
+      "cacheId": "be-HP4HHTM4J",
+      "formattedUrl": "https://produhacks-2022.devpost.com/",
+      "htmlFormattedUrl": "https://<b>produhacks</b>-2022.devpost.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUNTdOxHclth4ka42cvaIN06j3IAkj9Dgu5ygA33Ky8ktBq3Gl3lfIVI0Q&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "Event": [
+          {
+            "image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/001/858/829/datas/original.png",
+            "endDate": "2022-03-06T16:15:00-05:00",
+            "name": "ProduHacks 2022 - UBC BizTech & EY's Product",
+            "description": "<h4 id=\"produhacks-is-a-product-hackathon-that-is-h",
+            "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
+            "startDate": "2022-03-02T05:30:00-05:00",
+            "url": "https://produhacks-2022.devpost.com/"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/001/857/878/datas/original.png",
+            "og:type": "challengepost:challenge",
+            "twitter:card": "summary",
+            "twitter:title": "ProduHacks 2022 - UBC BizTech & EY's Product Management Hackathon",
+            "og:site_name": "ProduHacks 2022 - UBC BizTech & EY's Product Management Hackathon",
+            "twitter:domain": "devpost.com",
+            "og:title": "ProduHacks 2022 - UBC BizTech & EY's Product Management Hackathon",
+            "csrf-param": "authenticity_token",
+            "og:description": "Creating opportunities for all students to dive firsthand into the exciting world of Product Management!",
+            "twitter:image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/001/857/878/datas/large.png",
+            "fb:app_id": "115745995110194",
+            "twitter:site": "@Devpost",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+            "twitter:description": "Creating opportunities for all students to dive firsthand into the exciting world of Product Management!",
+            "csrf-token": "Yn6VHsTHtuITEMK+1aDwtITfHNa6yKo4fN5gxoqiFEvP2EjXi0EkwBhEfWYVPXkTgB8tptOTnqsUFy/6wd4QhQ==",
+            "og:url": "https://produhacks-2022.devpost.com/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/001/857/878/datas/original.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ProduHacks 2024",
+      "htmlTitle": "<b>ProduHacks</b> 2024",
+      "link": "https://www.ubcbiztech.com/produhacks-2024",
+      "displayLink": "www.ubcbiztech.com",
+      "snippet": "About. UBC BizTech welcomes you to ProduHacks, a process-centric hackathon focused on making the right decisions to develop a product that matters.",
+      "htmlSnippet": "About. UBC BizTech welcomes you to <b>ProduHacks</b>, a process-centric hackathon focused on making the right decisions to develop a product that matters.",
+      "cacheId": "fFZ_0tAkahQJ",
+      "formattedUrl": "https://www.ubcbiztech.com/produhacks-2024",
+      "htmlFormattedUrl": "https://www.ubcbiztech.com/<b>produhacks</b>-2024",
+      "pagemap": {
+        "metatags": [
+          {
+            "twitter:title": "ProduHacks 2024",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "ProduHacks 2024"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "UBC BizTech (@ubcbiztech) • Instagram photos and videos",
+      "htmlTitle": "UBC BizTech (@ubcbiztech) • Instagram photos and videos",
+      "link": "https://www.instagram.com/ubcbiztech/?hl=en",
+      "displayLink": "www.instagram.com",
+      "snippet": "... profile picture. MIS Night '23. GameWorld's profile picture. GameWorld. ProduHacks '23's profile picture. ProduHacks '23. 415 posts; 3,624 followers; 489 ...",
+      "htmlSnippet": "... profile picture. MIS Night &#39;23. GameWorld&#39;s profile picture. GameWorld. <b>ProduHacks</b> &#39;23&#39;s profile picture. <b>ProduHacks</b> &#39;23. 415 posts; 3,624 followers; 489&nbsp;...",
+      "formattedUrl": "https://www.instagram.com/ubcbiztech/?hl=en",
+      "htmlFormattedUrl": "https://www.instagram.com/ubcbiztech/?hl=en",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDHNawaI0drexIBYchp7_YKN9nO6r-jzCCU0fHDdAWy-Q3Y4NBMoXSGBQ&s=0",
+            "width": "150",
+            "height": "150"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-lax3-1.cdninstagram.com/v/t51.2885-19/431676186_2727131194253099_6645315327134124541_n.jpg?stp=dst-jpg_s100x100&_nc_cat=105&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=fKbCYb_zxg0AX_I1U8I&_nc_ht=scontent-lax3-1.cdninstagram.com&oh=00_AfA7w_z3dMsevhe2th9toRgaspTpwZDseAqpXhmV6NtFxQ&oe=6602D57D",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "al:ios:app_name": "Instagram",
+            "og:title": "UBC BizTech (@ubcbiztech) • Instagram photos and videos",
+            "al:android:package": "com.instagram.android",
+            "al:ios:url": "instagram://user?username=ubcbiztech",
+            "color-scheme": "light",
+            "og:description": "3,641 Followers, 506 Following, 417 Posts - See Instagram photos and videos from UBC BizTech (@ubcbiztech)",
+            "al:ios:app_store_id": "389801252",
+            "al:android:url": "https://instagram.com/_u/ubcbiztech/",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/ubcbiztech/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3326112760889947135"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ProduHacks x EY 2023: Product focused hackathon - Devpost",
+      "htmlTitle": "<b>ProduHacks</b> x EY 2023: Product focused hackathon - Devpost",
+      "link": "https://produhacks-2023-17717.devpost.com/",
+      "displayLink": "produhacks-2023-17717.devpost.com",
+      "snippet": "PRODUHACKS X EY IS A PRODUCT HACKATHON THAT IS HOSTED IN PARTNERSHIP WITH EY'S PRODUCT DIVISION. The future is now. The advancements in technology have brought ...",
+      "htmlSnippet": "<b>PRODUHACKS</b> X EY IS A PRODUCT HACKATHON THAT IS HOSTED IN PARTNERSHIP WITH EY&#39;S PRODUCT DIVISION. The future is now. The advancements in technology have brought&nbsp;...",
+      "cacheId": "-ZPE8j9sOCoJ",
+      "formattedUrl": "https://produhacks-2023-17717.devpost.com/",
+      "htmlFormattedUrl": "https://<b>produhacks</b>-2023-17717.devpost.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlt6jkvcC0fY7ZmpwgRbI6oS8fOZA7BTpDgseiuirF5f9qCkm6dOtGeN8&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "Event": [
+          {
+            "image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/002/432/836/datas/original.png",
+            "endDate": "2023-04-02T16:00:00-04:00",
+            "name": "ProduHacks x EY 2023",
+            "description": "<h4 id=\"produhacks-x-ey-is-a-product-hackathon-that",
+            "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
+            "startDate": "2023-03-31T13:00:00-04:00",
+            "url": "https://produhacks-2023-17717.devpost.com/"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/002/425/911/datas/original.png",
+            "og:type": "challengepost:challenge",
+            "twitter:card": "summary",
+            "twitter:title": "ProduHacks x EY 2023",
+            "og:site_name": "ProduHacks x EY 2023",
+            "twitter:domain": "devpost.com",
+            "og:title": "ProduHacks x EY 2023",
+            "csrf-param": "authenticity_token",
+            "og:description": "Product focused hackathon",
+            "twitter:image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/002/425/911/datas/large.png",
+            "fb:app_id": "115745995110194",
+            "twitter:site": "@Devpost",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+            "twitter:description": "Product focused hackathon",
+            "csrf-token": "LqwpNbvolDLNgtQ8/BWENxE2TgA4kZ7POzYa1oEknrw/RkNz3J4Q6FcEj96PeWR7JOOxCotzVo9lizGUk+gvBA==",
+            "og:url": "https://produhacks-2023-17717.devpost.com/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/002/425/911/datas/original.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Register for ProduHacks",
+      "htmlTitle": "Register for <b>ProduHacks</b>",
+      "link": "https://app.ubcbiztech.com/event/produhacks/2023/register",
+      "displayLink": "app.ubcbiztech.com",
+      "snippet": "Developer? UI/UX Designer? Then our Annual ProduHacks is back this time for YOU! ProduHacks is a unique, multidisciplinary hackathon for participants to ...",
+      "htmlSnippet": "Developer? UI/UX Designer? Then our Annual <b>ProduHacks</b> is back this time for YOU! <b>ProduHacks</b> is a unique, multidisciplinary hackathon for participants to&nbsp;...",
+      "cacheId": "4NN5M6lzHyEJ",
+      "formattedUrl": "https://app.ubcbiztech.com/event/produhacks/2023/register",
+      "htmlFormattedUrl": "https://app.ubcbiztech.com/event/<b>produhacks</b>/2023/register",
+      "pagemap": {
+        "metatags": [
+          {
+            "theme-color": "#000000",
+            "viewport": "width=device-width,initial-scale=1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "UBC BizTech",
+      "htmlTitle": "UBC BizTech",
+      "link": "https://www.facebook.com/BizTechUBC/",
+      "displayLink": "www.facebook.com",
+      "snippet": "ProduHacks is a case competition and a hackathon where students will code and develop new products to solve real-world challenges. Over the 24-hour case, you ...",
+      "htmlSnippet": "<b>ProduHacks</b> is a case competition and a hackathon where students will code and develop new products to solve real-world challenges. Over the 24-hour case, you&nbsp;...",
+      "cacheId": "E3MpL4BrnEYJ",
+      "formattedUrl": "https://www.facebook.com/BizTechUBC/",
+      "htmlFormattedUrl": "https://www.facebook.com/BizTechUBC/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkS8B6ZS__ABYcAAe7BhNiSxlIqb-3ovN_pgNJfPJRmQgHDLPCWfOpVJE&s",
+            "width": "224",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100063569083723",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063569083723",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100063569083723",
+            "og:description": "UBC BizTech. 2,485 likes · 1 talking about this. Bridging the gap between business, technology and you.",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063569083723",
+            "twitter:image:alt": "UBC BizTech",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "UBC BizTech",
+            "twitter:title": "UBC BizTech",
+            "al:ios:app_name": "Facebook",
+            "og:title": "UBC BizTech",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100063569083723",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "UBC BizTech. 2,485 likes · 1 talking about this. Bridging the gap between business, technology and you.",
+            "og:locale": "en_US",
+            "fb-version": "400.0.0.0.71:2437",
+            "og:url": "https://www.facebook.com/BizTechUBC/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063569083723"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Register for ProduHacks",
+      "htmlTitle": "Register for <b>ProduHacks</b>",
+      "link": "https://app.ubcbiztech.com/event/produhacks/2024/register",
+      "displayLink": "app.ubcbiztech.com",
+      "snippet": "ProduHacks. UBC BizTech invites you to our annual process-centric product hackathon : ProduHacks! [Create products with a purpose] When : March 23-24, 2024 ...",
+      "htmlSnippet": "<b>ProduHacks</b>. UBC BizTech invites you to our annual process-centric product hackathon : <b>ProduHacks</b>! [Create products with a purpose] When : March 23-24, 2024&nbsp;...",
+      "cacheId": "jP9frSyeV54J",
+      "formattedUrl": "https://app.ubcbiztech.com/event/produhacks/2024/register",
+      "htmlFormattedUrl": "https://app.ubcbiztech.com/event/<b>produhacks</b>/2024/register",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGD9HCvXiehEKWn37W5oD4lGgdwF4MDUsJgC4qW1_bam0QlOHXGROXswY&s",
+            "width": "352",
+            "height": "143"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#000000",
+            "viewport": "width=device-width,initial-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i.postimg.cc/wM9K0H2x/Banner.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "UBC BizTech - Introducing our keynote speakers for... | Facebook",
+      "htmlTitle": "UBC BizTech - Introducing our keynote speakers for... | Facebook",
+      "link": "https://www.facebook.com/BizTechUBC/posts/-introducing-our-keynote-speakers-for-gametech-blair-stacey-and-nester-chen-from/2897495716948087/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Jan 12, 2020 ... Still thinking about applying for ProduHacks? Here are the 3 streams you can participate in! Entertainment and Media Business ...",
+      "htmlSnippet": "Jan 12, 2020 <b>...</b> Still thinking about applying for <b>ProduHacks</b>? Here are the 3 streams you can participate in! Entertainment and Media Business&nbsp;...",
+      "cacheId": "3WqBMq-hN3QJ",
+      "formattedUrl": "https://www.facebook.com/BizTechUBC/.../2897495716948087/",
+      "htmlFormattedUrl": "https://www.facebook.com/BizTechUBC/.../2897495716948087/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHbtAAcPBuytNAaZ9KztD44Z29HBgs6UPioqxxYsnmsUcvOh1J6GORvDo&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2897495086948150",
+            "og:type": "video.other",
+            "og:image:alt": "UBC BizTech",
+            "twitter:card": "summary",
+            "twitter:title": "UBC BizTech",
+            "theme-color": "#FFFFFF",
+            "og:title": "UBC BizTech",
+            "google": "notranslate",
+            "og:description": "📣 Introducing our keynote speakers for GameTech: Blair Stacey and Nester Chen from Telus! 📣\n\nBlair is a senior product manager and Nester is a regional marketing manager. They will be speaking about...",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2897495086948150",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "UBC BizTech",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "📣 Introducing our keynote speakers for GameTech: Blair Stacey and Nester Chen from Telus! 📣\n\nBlair is a senior product manager and Nester is a regional marketing manager. They will be speaking about...",
+            "og:locale": "en_US",
+            "fb-version": "400.0.0.0.37:2435",
+            "og:url": "https://www.facebook.com/BizTechUBC/posts/-introducing-our-keynote-speakers-for-gametech-blair-stacey-and-nester-chen-from/2897495716948087/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2897495086948150"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "UBC BizTech on LinkedIn: See a company you want to learn more ...",
+      "htmlTitle": "UBC BizTech on LinkedIn: See a company you want to learn more ...",
+      "link": "https://www.linkedin.com/posts/ubcbiztech_see-a-company-you-want-to-learn-more-about-activity-7153257490946691073-P5hm",
+      "displayLink": "www.linkedin.com",
+      "snippet": "Jan 16, 2024 ... ... ProduHacks. Interested in learning more? Apply to compete in ProduHacks by Monday, March 18 at 11:59 PM here: https ...",
+      "htmlSnippet": "Jan 16, 2024 <b>...</b> ... <b>ProduHacks</b>. Interested in learning more? Apply to compete in <b>ProduHacks</b> by Monday, March 18 at 11:59 PM here: https&nbsp;...",
+      "formattedUrl": "https://www.linkedin.com/.../ubcbiztech_see-a-company-you-want-to-learn...",
+      "htmlFormattedUrl": "https://www.linkedin.com/.../ubcbiztech_see-a-company-you-want-to-learn...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ5FVJ4oATPTMnweT7As2PPRWZOhPxgeDWCzlIrj7ZRBTK_Iy-KFuX3ss&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://media.licdn.com/dms/image/D4E22AQGV_hTLcgZBlQ/feedshare-shrink_800/0/1705469485484?e=2147483647&v=beta&t=7WnGXj1JcRg3J53Qx4L0g27dMKZ5NTfuybEfhafKsPE",
+            "twitter:title": "UBC BizTech on LinkedIn: See a company you want to learn more about? Attend BluePrint and leverage…",
+            "twitter:card": "summary_large_image",
+            "og:type": "article",
+            "al:ios:app_name": "LinkedIn",
+            "twitter:url": "https://www.linkedin.com/posts/ubcbiztech_see-a-company-you-want-to-learn-more-about-activity-7153257490946691073-P5hm",
+            "og:title": "UBC BizTech on LinkedIn: See a company you want to learn more about? Attend BluePrint and leverage…",
+            "al:android:package": "com.linkedin.android",
+            "pagekey": "p_public_post",
+            "locale": "en_US",
+            "al:ios:url": "https://www.linkedin.com/posts/ubcbiztech_see-a-company-you-want-to-learn-more-about-activity-7153257490946691073-P5hm",
+            "og:description": "See a company you want to learn more about? Attend BluePrint and leverage your network with 80+ professionals who will be hosting keynote, workshops, panels!…",
+            "al:ios:app_store_id": "288429040",
+            "twitter:image": "https://media.licdn.com/dms/image/D4E22AQGV_hTLcgZBlQ/feedshare-shrink_800/0/1705469485484?e=2147483647&v=beta&t=7WnGXj1JcRg3J53Qx4L0g27dMKZ5NTfuybEfhafKsPE",
+            "al:android:url": "https://www.linkedin.com/posts/ubcbiztech_see-a-company-you-want-to-learn-more-about-activity-7153257490946691073-P5hm",
+            "lnkd:url": "https://www.linkedin.com/feed/update/urn:li:activity:7153257490946691073",
+            "twitter:site": "@linkedin",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "See a company you want to learn more about? Attend BluePrint and leverage your network with 80+ professionals who will be hosting keynote, workshops, panels!…",
+            "og:url": "https://www.linkedin.com/posts/ubcbiztech_see-a-company-you-want-to-learn-more-about-activity-7153257490946691073-P5hm",
+            "al:android:app_name": "LinkedIn"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://media.licdn.com/dms/image/D4E22AQGV_hTLcgZBlQ/feedshare-shrink_800/0/1705469485484?e=2147483647&v=beta&t=7WnGXj1JcRg3J53Qx4L0g27dMKZ5NTfuybEfhafKsPE"
+          }
+        ]
+      }
+    }
+  ]
+}
