@@ -13,7 +13,7 @@ export default function App() {
   const [messages, setMessages] = useState([]);
   const [history, setHistory] = useState([]);
   const cohere = new CohereClient({
-    token: "4fO1Ufhr0lgREDz0XBKs4C8QKQbUEu0vvbsAhtt6",
+    token: process.env.REACT_APP_COHERE_API_KEY,
   });
 
   const handleSubmit = async () => {
@@ -22,13 +22,12 @@ export default function App() {
       content: input,
     };
   
-    // Update messages state optimistically
     setMessages([...messages, prompt]);
 
     (async () => {
       const prediction = await cohere.generate({
           prompt: input,
-          maxTokens: 10,
+          // maxTokens: 50,
       });
       
       console.log("Received prediction", prediction);
@@ -48,31 +47,8 @@ export default function App() {
       setInput("");
     })();
   
-    // try {
-    //   // const response = await fetch("https://api.openai.com/v1/chat/completions", {
-    //   //   method: "POST",
-    //   //   headers: {
-    //   //     Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
-    //   //     "Content-Type": "application/json",
-    //   //   },
-    //   //   body: JSON.stringify({
-    //   //     model: "gpt-3.5-turbo",
-    //   //     messages: [...messages, prompt],
-    //   //   }),
-    //   // });
-  
-    //   const data = await response.json();
-    //   const res = data.choices[0].message.content;
-  
-    //   // Use the updated messages state after API response
-    //   setMessages((prevMessages) => [
-    //     ...prevMessages,
-    //     {
-    //       role: "assistant",
-    //       content: res,
-    //     },
-    //   ]);
-  
+    
+
     //   setHistory((prevHistory) => [...prevHistory, { question: input, answer: res }]);
     //   setInput("");
     // } catch (error) {
