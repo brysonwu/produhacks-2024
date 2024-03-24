@@ -5,7 +5,7 @@ export default function Input({ value, onChange, onClick }) {
     <div className={styles.wrapper}>
       <input
         className={styles.text}
-        placeholder="Ask me anything..."
+        placeholder="Text Here"
         value={value}
         onChange={onChange}
       />
