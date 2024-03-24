@@ -25,7 +25,7 @@ st.markdown("""
     [data-testid="stSidebar"] {
         background-image: linear-gradient(#2D388A, #00AEEF) !important;
         min-width: 10px !important;
-        width: 130px !important;
+        width: 180px !important;
     }
 </style>
 """,

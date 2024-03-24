@@ -15,6 +15,7 @@ plotly = "^5.20.0"
 wordcloud = "^1.9.3"
 python-dotenv = "^1.0.1"
 motor = "^3.3.2"
+streamlit-lchart-card = "^1.0.1"
 
 
 [build-system]

@@ -48,7 +48,6 @@ with c1:
 
 with c2:
     df = px.data.tips()
-    print(df)
     df = pd.DataFrame(
         data={
             'share': [300, 360, 80, 250],
@@ -61,7 +60,6 @@ with c2:
     st.plotly_chart(fig, use_container_width=True)
 
 df = px.data.gapminder().query("continent == 'Oceania'")
-print(df)
 df = pd.DataFrame(
     data={
         'source': ['Twitter'] * 6 + ['Forums'] * 6 + ['News'] * 6 + ['Reddit'] * 6 + ['Comments'] * 6 + ['Other'] * 6,
