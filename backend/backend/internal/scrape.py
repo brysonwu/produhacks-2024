@@ -9,11 +9,12 @@ from backend.internal.models import ArticleModel
 client = ScrapingBeeClient(secrets.SCRAPINGBEE_API_KEY)
 service = build('customsearch', 'v1', developerKey=secrets.GOOGLE_API_KEY)
 
-def fetch_urls(query: str, cx=secrets.GOOGLE_CX) -> list[str]:
+def fetch_urls(query: str, page: int, cx=secrets.GOOGLE_CX) -> list[str]:
     response =  service.cse().list(
         q=query, 
         cx=cx, 
         sort='date',
+        start=(page - 1) * 10 + 1,
     ).execute()
 
     return [item['link'] for item in response['items']]
@@ -36,20 +37,23 @@ def parse_articles(htmls: list[str]) -> list[ArticleModel]:
         art.set_html(html)
         art.parse()
 
-        articles.append(
-            ArticleModel(
-                title=art.title,
-                source=art.meta_data['og']['site_name'],
-                url=art.meta_data['og']['url'],
-                authors=art.authors,
-                # published=date_parse(art.meta_data['article']['published']),
-                text=art.text
+        try:
+            articles.append(
+                ArticleModel(
+                    title=art.title,
+                    source=art.meta_data['og']['site_name'],
+                    url=art.meta_data['og']['url'],
+                    authors=art.authors,
+                    # published=date_parse(art.meta_data['article']['published']),
+                    text=art.text
+                )
             )
-        )
+        except:
+            continue
     
     return articles
 
-def scrape_articles(query: str) -> list[ArticleModel]:
-    urls = fetch_urls(query)
+def scrape_articles(query: str, page: int) -> list[ArticleModel]:
+    urls = fetch_urls(query, page)
     htmls = fetch_htmls(urls)
     return parse_articles(htmls)

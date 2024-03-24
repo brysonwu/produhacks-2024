@@ -6,11 +6,11 @@ from backend.internal import db
 router = APIRouter()
 
 @router.post('/{query}')
-async def execute(query: str):
+async def execute(query: str, page:int):
     articles = [
         a.model_dump(by_alias=True, exclude=['id']) 
-        for a in scrape_articles(query)
+        for a in scrape_articles(query, page)
     ]
     inserts = await db.articles.insert_many(articles)
 
-    return inserts.inserted_ids
+    return [str(i) for i in inserts.inserted_ids]
