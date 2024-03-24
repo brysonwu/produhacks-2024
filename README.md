@@ -1,3 +1,3 @@
 # PReview
 
-A tool for public relation managers.
+A tool for public relations managers.
